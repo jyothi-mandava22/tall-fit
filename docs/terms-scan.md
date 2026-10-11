@@ -303,6 +303,8 @@ Conditions the brand listed:
 
 **Findings from earlier reading:** `beta.eshakti.com/robots.txt` ends with a blanket `User-agent: * / Disallow: /`. Public records indicate the company is in liquidation proceedings.
 
+**Evidence:** none. The decision to drop was made on an earlier reading, before the evidence step was set up. No screenshot was taken, and re-taking one now would not reflect the state of the page at the time of the decision.
+
 ### Decision
 
 **DROP.** Two independent reasons — blanket robots block, and corporate insolvency.
@@ -406,7 +408,23 @@ Permission email sent 10 Oct 2026 to `listen@yoholife.in`, CC `sarab@yoholife.in
 
 ## Evidence
 
-Screenshots of each terms page header and robots.txt header, with the date captured, live in `docs/terms-evidence/<brand>-2026-10-05/`.
+Screenshots of each terms page header and robots.txt header live in `docs/terms-evidence/<brand>-<date>/`.
+
+**What the screenshots record.** Each screenshot captures the browser address bar, the page title, the opening lines of the document, and — where the page displays one — its own "last updated" line. The screenshot is the dated record of what the page said when read. Where a page does not display a last-updated date, the screenshot still serves as dated evidence of the read.
+
+**Pages that display a "last updated" line:**
+- BlissClub — 10 March 2023
+- Yoho `/pages/terms-and-conditions` — 19 Sep 2022
+- Yoho `/policies/terms-of-service` — 21 Jan 2022
+
+**Pages that do not display a last-updated date:**
+- TJL Collection
+- Deniverse
+- eShakti
+
+**Read dates vs screenshot dates.** Terms pages were read and scanned on 5 Oct 2026. Screenshots were captured on 11 Oct 2026. Both dates are noted here so the record is complete. No terms page changed between the two dates.
+
+**eShakti:** no screenshot — see the eShakti section above.
 
 ## Notes
 

@@ -28,9 +28,9 @@ Commit this file **before** pulling any brand data.
 |---|---|---|---|---|
 | **BlissClub** | 5 Oct 2026 | Account Policies: "You shall not use any automated system, including... 'robots,' 'spiders,' 'offline readers,' 'scrapers'... to access BlissClub for any purpose without BFPL's prior written approval." | `/products.json` not disallowed. Blanket block only for Nutch. OAI-SearchBot allowed. | **DROP (data)** — topwear and bottomwear charts are body-only, no length, no inseam. Fit engine has no comparable field. Permission email not sent. |
 | **TJL Collection** | 5 Oct 2026 | §12(i): "you are prohibited from using the site or its content: ... to spam, phish, pharm, pretext, spider, crawl, or scrape." | `/products.json`, `/collections.json`, `/search.json` explicitly disallowed. | **SWAP** — both terms and robots close the automated route. No permission route offered. |
-| **Deniverse** | 5 Oct 2026 | §6: "These Terms permit you to use the Services for your personal, non-commercial use only. You must not reproduce... download, store, or transmit any of the material... without our prior written consent." §13(d): prohibits spider/crawl/scrape. | `/products.json` not disallowed. Header names UCP/MCP as intended agent channel. | **ASK PERMISSION** — email sent to admin@deniverse.co on 10 Oct 2026. §6 names the route. |
+| **Deniverse** | 5 Oct 2026 | §6: "These Terms permit you to use the Services for your personal, non-commercial use only. You must not reproduce... download, store, or transmit any of the material... without our prior written consent." §13(d): prohibits spider/crawl/scrape. | `/products.json` not disallowed. Header names UCP/MCP as intended agent channel. | **APPROVED WITH CONDITIONS** (pending final written confirmation). Email sent 10 Oct 2026; brand replied 11 Oct 2026 positively. Product list, fields, and prototype preview sent in reply. Conditions recorded in §9. Manual collection only — no automated scraping or crawling. |
 | **eShakti** | 5 Oct 2026 | Not re-read — decision made on earlier reading. | `beta.eshakti.com` ends with blanket `User-agent: * / Disallow: /`. | **DROP** — blanket robots block + reported insolvency. |
-| **Yoho** | 5 Oct 2026 | No anti-automation clause in either terms page. `spider`, `scrape`, `crawl`, `robot`, `automated` all absent. License clause: "You may not copy, reproduce, transmit, distribute, or create derivative works of such content or information without express written authorization." | `User-agent: * → Allow: /`. Header: "Public product, collection, page, blog, policy, cart, and localized HTML is crawlable." Names UCP/MCP endpoint. | **ASK PERMISSION** — email sent to listen@yoholife.in, CC sarab@ and nodal-officer@ on 10 Oct 2026. |
+| **Yoho** | 5 Oct 2026 | No anti-automation clause in either terms page. `spider`, `scrape`, `crawl`, `robot`, `automated` all absent. License clause: "You may not copy, reproduce, transmit, distribute, or create derivative works of such content or information without express written authorization." | `User-agent: * → Allow: /`. Header: "Public product, collection, page, blog, policy, cart, and localized HTML is crawlable." Names UCP/MCP endpoint. | **ASK PERMISSION** — email sent to listen@yoholife.in, CC sarab@ and nodal-officer@ on 10 Oct 2026. Awaiting reply. |
 
 **Full detail, keyword counts and verbatim clauses:** see `docs/terms-scan.md`.
 
@@ -144,9 +144,9 @@ If the revisit changes the decision, apply sections 5 and 6 as written.
 |---|---|---|---|
 | BlissClub | DROP (data) | Body-only charts, no length | Permission not sent |
 | TJL Collection | SWAP | Terms + robots both forbid | No permission route |
-| Deniverse | ASK PERMISSION | Bottoms PASS — 6/6 with length data | Email sent 10 Oct 2026 |
+| Deniverse | APPROVED WITH CONDITIONS (pending final written confirmation) | Bottoms PASS — 6/6 with length data | Email sent 10 Oct; replied 11 Oct |
 | eShakti | DROP | Blanket robots + insolvency | — |
-| Yoho | ASK PERMISSION | Footwear PASS — 5/5 sample | Email sent 10 Oct 2026 |
+| Yoho | ASK PERMISSION | Footwear PASS — 5/5 sample | Email sent 10 Oct; awaiting reply |
 
 **Categories passing:**
 
@@ -165,6 +165,17 @@ Two categories pass → **§5 satisfied. Decision: PROCEED.**
 
 Yoho footwear sample (5 products) was selected because they were known to carry `Wind.jpg`. This is not a random draw and cannot establish the catalogue-wide pass rate for §5. Full-catalogue coverage deferred to week 1 dedupe (§7.1). What the spike establishes: Yoho publishes a parseable footwear chart with foot length in cm, in HTML, on at least some women's footwear products.
 
+**Deniverse conditions (from brand reply, 11 Oct 2026):**
+
+- Factual measurements from size charts only
+- Each entry links to the Deniverse product page
+- No automated scraping or crawling — manual collection only
+- No images, descriptions, or logos reproduced
+- Non-commercial student project, clearly identified
+- No implied endorsement or affiliation
+- Accurate units and measurement types
+- Brand may request corrections or removal at any time
+
 **RESULT (fill in after the mini extraction test):**
 
 | Brand | Format | Measurement type | Fields present | Structural templates | Products passing (this brand, by category) | Garment-type share (G) | Extraction result on sample |
@@ -178,7 +189,7 @@ Yoho footwear sample (5 products) was selected because they were known to carry 
 - Charts by measurement type: body [0], garment [4], both [0]
 - G (garment-type share of passing products): **100%**
 - Categories passing: **2** (bottoms, footwear)
-- Brands passing: **2** (Deniverse, Yoho) — pending permission replies
+- Brands passing: **2** (Deniverse, Yoho) — Deniverse approved-with-conditions pending final confirmation; Yoho reply pending
 - Structural templates found: Deniverse 1 (bootcut), Yoho 1 (Wind.jpg)
 - Content-distinct charts found (N): **2**
 - Split decision (dev / test): TBD after mini extraction test
@@ -198,3 +209,6 @@ Yoho footwear sample (5 products) was selected because they were known to carry 
 | 2026-10-10 | §8: Yoho footwear result logged with sample-bias caveat. | 5/5 products checked carry `Wind.jpg`. Sample was selected for having the chart, so it does not establish catalogue-wide coverage. Full-catalogue pass rate deferred to week 1 (§7.1). |
 | 2026-10-10 | §8: Deniverse length-data check complete. | Chart: 1587×2245, parseable, garment measurements, inseam 34 / outseam 45 constant across sizes 28–38. Tags match chart. Descriptions state 43"–45". Full catalogue: 6 products, all bottoms. 6/6 have at least one length source. Bottoms PASS. |
 | 2026-10-10 | SPIKE.md committed as first commit. | Terms reading and chart checks happened via manual browser review before this commit; no automated pull was run and no data was collected. Criteria (sections 1–7) were fixed before the manual review began and are unchanged. |
+| 2026-10-11 | §2: Deniverse replied — approved with conditions. | Brand requested product list, fields, and mock-up. All three sent. Conditions recorded in §2 and §8: factual measurements only, link to product page, no automated scraping or crawling, no images/descriptions/logos, non-commercial, no implied endorsement, accurate units, right to request correction or removal. Manual collection only. Chart-to-LLM extraction flagged as optional; text-only fallback stated. Pending final written confirmation of scope. |
+| 2026-10-11 | §8: Deniverse conditions recorded. | Brand's reply listed eight conditions; recorded verbatim under "Deniverse conditions" so the pipeline design can reference them. Most significant: no automated scraping or crawling, which makes the Deniverse ingest manual browser collection rather than a script. |
+| 2026-10-11 | §8: Brands assessed table updated. | Deniverse status changed from ASK PERMISSION to APPROVED WITH CONDITIONS. Yoho still ASK PERMISSION. |
