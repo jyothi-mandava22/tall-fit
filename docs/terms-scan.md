@@ -1,3 +1,181 @@
+# Terms and robots.txt scan
+
+**Purpose:** supporting document for `docs/SPIKE.md` §2. Records what was read, when, and what each brand's terms and robots.txt say about automated access, copying, and permission.
+
+**Rule:** the terms and robots.txt clauses below are recorded verbatim with section numbers and read dates. Verdicts and decisions match `SPIKE.md` §2 exactly.
+
+**Read by:** Jyothi
+**Scan date:** 5 Oct 2026
+**Keyword list:** scrape, crawl, spider, robot, automated, copy, reproduce, download, store, derivative, written, commercial, use, grievance
+
+---
+
+## Summary table
+
+| Brand | Date checked | Anti-automation clause? | JSON feed allowed? | Decision | Reason |
+|---|---|---|---|---|---|
+| BlissClub | 5 Oct 2026 | Yes — custom, names "robots / spiders / scrapers" | Not disallowed | DROP (data) | Body-only charts, no length. Terms question moot. |
+| TJL Collection | 5 Oct 2026 | Yes — §12(i) spider / crawl / scrape | Disallowed | SWAP | Both terms and robots close the door |
+| Deniverse | 5 Oct 2026 | Yes — §6 download/store, §13(d) spider/crawl/scrape | Not disallowed | APPROVED WITH CONDITIONS (pending final written confirmation) | §6 names "prior written consent" route; brand replied positively |
+| eShakti | 5 Oct 2026 | Blanket robots block | Blocked | DROP | Insolvency + robots block |
+| Yoho | 5 Oct 2026 | No — absent from both pages | Not disallowed | ASK PERMISSION | Terms restrict storage/display; robots clean |
+
+---
+
+## BlissClub
+
+**Terms URL:** https://blissclub.com/policies/terms-of-service
+**Last updated (page):** 10 March 2023
+**Date checked:** 5 Oct 2026
+
+### Terms — keyword counts
+
+| Keyword | Count | Notes |
+|---|---|---|
+| `spider` | 2 | Both in Account Policies |
+| `scraper` | 1 | Account Policies |
+| `crawl` | 0 | Absent |
+| `robots` | 2 | Both in Account Policies |
+| `automated` | 3 | Account Policies (×2), Prohibitions on Submitted Content |
+| `copy` | 24 | License to Access, Account Policies, IP Rights |
+| `reproduce` | 2 | IP Rights (×2 sections) |
+| `download` | 1 | IP Rights |
+| `store` | 1 | Limitation of Liability |
+| `stored` | 2 | Disclaimer of Warranties (×2) |
+| `derivative` | 1 | License to Access |
+| `written` | 7 | Account Policies, License to Access, IP Rights, Notice |
+| `commercial` | 4 | Account Policies, Prohibitions on Submitted Content (×2), IP Rights |
+| `use` | 188 | Pervasive |
+| `grievance` | 1 | Customer Support |
+
+### Clauses that bind
+
+**1. Automated access — Account Policies**
+> "You shall not use any automated system, including but not limited to, "robots," "spiders," "offline readers," "scrapers," etc., to access BlissClub for any purpose without BFPL's prior written approval."
+
+**2. Rate limit — Account Policies**
+> "You shall not in any way that transmits more request messages to BlissClub servers in a given period of time than a human can reasonably produce in the same period by using a conventional online web browser; provided, however, that the operators of public search engines may use spiders or robots to copy materials from the site for the sole purpose of creating publicly available searchable indices of the materials, but not caches or archives of such material."
+
+**3. Personal use only — IP Rights**
+> "Data on BlissClub is provided to you AS IS for your information and personal use only and may not be used, copied, reproduced, distributed, transmitted, broadcast, displayed, sold, licensed, or otherwise exploited for any other purposes whatsoever without the prior written consent of the respective owners."
+
+**4. No derivative works — License to Access**
+> "you will not copy, distribute, or make derivative works of BlissClub or BlissClub Products in any medium without BFPL's prior written consent."
+
+**5. Permission route.** The clause itself names the mechanism — "prior written approval."
+
+### What the counts mean
+
+- `store` / `stored` (3 total) are all in disclaimers, not restrictions. No storage prohibition for you.
+- `use` (188) is not meaningful as a restriction count. The binding clause is the single "personal use only" phrase in IP Rights.
+- `crawl` (0) and `spider` (2) — the clause names specific tools rather than generic verbs. Deliberate drafting.
+
+### robots.txt
+
+**URL:** https://blissclub.com/robots.txt
+**Date checked:** 5 Oct 2026
+
+| Keyword | Count |
+|---|---|
+| `spider` | 0 |
+| `scraper` | 0 |
+| `crawl` | 4 (AhrefsBot, AhrefsSiteAudit, MJ12bot, Pinterest — all `Crawl-delay` only) |
+| `robot` / `robots` | 0 |
+| `automated` | 0 |
+| `copy` | 0 |
+
+**Access posture:** `/products.json`, `/products`, `/collections` (base) not disallowed. `/policies/`, `/search`, `/account`, `/cart`, `/checkout` disallowed. Blanket block only for Nutch. `OAI-SearchBot` explicitly allowed.
+
+### Robots vs terms
+
+| | robots.txt | Terms |
+|---|---|---|
+| `/products.json` | Not disallowed | Automated access banned without prior written approval |
+| `/products` | Not disallowed | Same |
+| `/collections` (base) | Not disallowed | Same |
+| `/policies/` | Disallowed | — |
+| `/search` | Disallowed | — |
+
+The two documents disagree. robots.txt is a crawl directive; it does not grant a license and cannot override a contract term.
+
+### Contact routes found
+
+| | |
+|---|---|
+| General | `hi@myblissclub.in` |
+| WhatsApp / phone | +91 99000 01845 |
+| Grievance Officer | Nisi Ann Mary — Director, `grievance@myblissclub.in` |
+| CIN | U52520KA2020PTC133220 |
+| Registered office | No. 145, UrbanVault, 5th Main Rd, Sector 6, HSR Layout, Bengaluru 560102 |
+
+### Decision
+
+**DROP (data, not terms).** Topwear and bottomwear charts both body-only — no garment length, no inseam. Fit engine has no comparable field. Permission email not sent; the decision supersedes the terms question.
+
+---
+
+## TJL Collection
+
+**Terms URL:** https://www.tjlcollection.com/policies/terms-of-service
+**Last updated (page):** not stated
+**Date checked:** 5 Oct 2026
+
+### Terms — keyword counts
+
+| Keyword | Count | Notes |
+|---|---|---|
+| `spider` | 1 | §12(i) |
+| `scrape` | 1 | §12(i) |
+| `crawl` | 1 | §12(i) |
+| `robot` | 0 | Absent |
+| `automated` | 0 | Absent |
+| `copy` | 2 | §2, §9 |
+| `reproduce` | 1 | §2 |
+| `download` | 0 | Absent |
+| `store` | 5 | §0 (×2), §5 (×2), §6, §10 — all "our store", descriptive |
+| `derivative` | 0 | Absent |
+| `written` | 2 | §2, §17 |
+| `commercial` | 0 | Absent |
+| `use` | Many | Pervasive |
+| `grievance` | 0 | Absent |
+
+On `store` = 5: all five hits refer to "our store" as the Shopify shop, none are a storage prohibition. What binds is §2 and §12(i).
+
+### Clauses that bind
+
+**1. Prohibited uses — §12(i)**
+> "you are prohibited from using the site or its content: ... (i) to spam, phish, pharm, pretext, spider, crawl, or scrape; ..."
+
+**2. No reproduction without permission — §2**
+> "You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion of the Service, use of the Service, or access to the Service or any contact on the website through which the service is provided, without express written permission by us."
+
+**3. Governing law — §18:** United States.
+
+**4. No permission route named.** §20 offers `info@tjlcollection.com` for "questions about the Terms of Service" only.
+
+### robots.txt
+
+**URL:** https://www.tjlcollection.com/robots.txt
+**Date checked:** 5 Oct 2026
+
+| Keyword | Count |
+|---|---|
+| `spider` | 0 |
+| `scraper` | 0 |
+| `crawl` | 0 |
+| `robot` | 0 |
+| `automated` | 0 |
+| `copy` | 0 |
+
+**Access posture:**
+Disallow: /products.json
+Disallow: /collections.json
+Disallow: /search.json
+Disallow: /cart.js
+Disallow: /cart/add.js
+Disallow: /cart/change.js
+Disallow: /search?q=
+Disallow: /search?type=*&q=
 JSON feed explicitly locked out. HTML `/products` and `/collections` base not disallowed. Named bots (GPTBot, PerplexityBot, ClaudeBot) get transactional-only disallows.
 
 ### Robots vs terms
