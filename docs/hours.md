@@ -23,6 +23,10 @@ Rough minutes are fine. The point is to know if the cap is holding.
 | 2026-10-11 | 15 | Recorded both screen captures; uploaded to Drive; sent preview links. |
 | 2026-10-11 | 60 | Wrote packages/shared (schema.ts, prompt.ts, index.ts), scripts/eval.ts, label format. |
 | 2026-10-11 | 30 | Read Gemini API terms; updated terms-scan and SPIKE.md. |
+| 2026-10-12 | 45 | Read At Long Last terms + robots + size guide. Wrote §2 row. |
+| 2026-10-12 | 20 | Sent At Long Last permission email with prototype preview. |
+| 2026-10-12 | 60 | Read Mystella terms + robots. Checked four size charts. |
+| 2026-10-12 | 15 | Saved evidence for At Long Last and Mystella. |
 
 **Running total:** 490 minutes ≈ **8.2 hours** (of ~65 planned)
 

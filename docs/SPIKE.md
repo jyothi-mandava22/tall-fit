@@ -11,10 +11,16 @@ Commit this file **before** pulling any brand data.
 - Total hours available (spike + 6-week build): **about 65** (10–12 for the spike + ~54 for the build)
 - Weekly cap: **9** (1 hr a day + one longer weekend block)
 - Rule: below 70 total → 3 brands and ~30 test charts. We are at 2 brands (see below).
-- Brands in scope: **2** (Yoho, Deniverse)
+- Brands in scope: 1 confirmed, 3 pending
+  - Deniverse — CONFIRMED IN WRITING (11 Oct 2026)
+  - Yoho — pending (10-day window closes ~21 Oct)
+  - At Long Last — pending (email sent 12 Oct)
+  - Mystella — pending (email sent 12 Oct)
   - BlissClub — dropped (data: body-only charts, no length)
   - TJL Collection — swapped (terms + robots both forbid automated access)
   - eShakti — dropped (blanket robots block + insolvency)
+  - Sizyx — dropped (data: body-only charts)
+  - Impakto — held (absolute IP clause, no permission route)
 - LLM spending ceiling: **$0** (free tier)
   - The extract script must enforce a max-calls-per-run limit and a daily call cap (e.g. 50/day).
   - A dry-run mode must print the estimated call count before spending.
@@ -32,6 +38,8 @@ Commit this file **before** pulling any brand data.
 | **Deniverse** | 5 Oct 2026 | §6: "These Terms permit you to use the Services for your personal, non-commercial use only. You must not reproduce... download, store, or transmit any of the material... without our prior written consent." §13(d): prohibits spider/crawl/scrape. | `/products.json` not disallowed. Header names UCP/MCP as intended agent channel. | **CONFIRMED IN WRITING, 11 Oct 2026** — brand replied "Confirmed - team Deniverse." Permission granted subject to the conditions listed on 10 Oct (factual measurements only; link to product page; no automated scraping or crawling; no images/descriptions/logos; non-commercial student project; no implied endorsement; accurate units; right to request corrections/removal). Deniverse values may be hand-entered under these terms. |
 | **eShakti** | 5 Oct 2026 | Not re-read — decision made on earlier reading. | `beta.eshakti.com` ends with blanket `User-agent: * / Disallow: /`. | **DROP** — blanket robots block + reported insolvency. |
 | **Yoho** | 5 Oct 2026 | No anti-automation clause in either terms page. `spider`, `scrape`, `crawl`, `robot`, `automated` all absent. License clause: "You may not copy, reproduce, transmit, distribute, or create derivative works of such content or information without express written authorization." | `User-agent: * → Allow: /`. Header: "Public product, collection, page, blog, policy, cart, and localized HTML is crawlable." Names UCP/MCP endpoint. | **ASK PERMISSION** — first email 10 Oct 2026 to listen@ CC sarab@ and nodal-officer@ (bounce + typo). Resent 11 Oct 2026 to listen@ CC sarab@ only, with prototype preview. Awaiting reply. |
+| **At Long Last** | 12 Oct 2026 | §6: "All content on our website... is the property of At Long Last... You may not use, reproduce, or distribute any content from our website without our prior written consent." No anti-automation clause. | Same Shopify 2025 agent-friendly template. `/products.json` not disallowed. Header names UCP/MCP. | **ASK PERMISSION** — email sent 12 Oct 2026 to info@atlonglastatelier.com. Length guide is HTML text (skirts 46/48 in, dresses 62/64 in, pants 36/38 in inseam). Site localizes to India. Awaiting reply. |
+| **Mystella** | 12 Oct 2026 | Second paragraph: "You may not sell or modify the content of this Website or reproduce, display, publicly perform, distribute, or otherwise use the materials in any way for any public or commercial purpose without the respective organisation's or entity's written permission." No anti-automation clause. | Same Shopify 2025 agent-friendly template. `/products.json` not disallowed. | **ASK PERMISSION** — email sent 12 Oct 2026 to yash.stella@gmail.com CC info.mystella@gmail.com. Four size charts publish garment length (Pants & Trousers 43, Jeans 30–31 inseam / 43 length, Cargo 32 inseam / 43 length, Dress 58). All images. Awaiting reply. |
 
 **Full detail, keyword counts and verbatim clauses:** see `docs/terms-scan.md`.
 
@@ -154,6 +162,8 @@ If the revisit changes the decision, apply sections 5 and 6 as written.
 | Deniverse | **CONFIRMED IN WRITING** | Bottoms PASS — 6/6 with length data | Emailed 10 Oct; replied 10 Oct; confirmed in writing 11 Oct |
 | eShakti | DROP | Blanket robots + insolvency | — |
 | Yoho | ASK PERMISSION | Footwear PASS — 5/5 sample | First email 10 Oct (bounce + typo); resent 11 Oct with preview; awaiting reply |
+| At Long Last | ASK PERMISSION | Skirts, dresses, pants — length guide (HTML text) | Email sent 12 Oct; awaiting reply |
+| Mystella | ASK PERMISSION | Bottoms (3 charts), Skirts/Dresses (1 chart) — all image format | Email sent 12 Oct; awaiting reply |
 
 **Categories passing:**
 
@@ -229,4 +239,6 @@ Yoho footwear sample (5 products) was selected because they were known to carry 
 | 2026-10-11 | §4 per-source dimension reframed as data-quality reporting. | With no accuracy claim, source labels serve traceability rather than accuracy splitting. Each stored value still records its source. |
 | 2026-10-11 | §7 test-set rule marked superseded; text retained. | No extraction-accuracy claim means no blind test set is required. Retained for context and in case the decision is reversed. |
 | 2026-10-11 | §8 mini extraction test marked not run / superseded. RESULT table repurposed as data-quality record. | Same reason as §7. The table now documents what data exists per product, not extraction performance. |
-| 2026-10-12 | §2: At Long Last permission email sent. | Email to info@atlonglastatelier.com included: brief idea explanation, Deniverse confirmation as context, cited §6 (Intellectual Property) clause verbatim, prototype preview via Drive link. Evidence saved: terms header, robots.txt header, length guide section, all captured 12 Oct 2026. Awaiting reply. |
+| 2026-10-12 | §2: Mystella evaluated — ask permission. | Terms have no anti-automation clause; second paragraph names "written permission" as the route. Clause explicitly covers "public" purpose; email addresses this word directly and offers a private-demo fallback. robots.txt is the Shopify agent-friendly template. Four size charts publish garment length (images). Covers Bottoms (three charts) and Skirts/Dresses (Dress). Email sent to yash.stella@gmail.com CC info.mystella@gmail.com. |
+| 2026-10-12 | §1, §2: At Long Last and Mystella added to brand scope. | Two new brands in flight. If both confirm, the project's category coverage expands to 4 brands across 3–4 categories. §1 budget line updated to reflect confirmed + pending. |
+| 2026-10-12 | §2: Evidence folders for At Long Last (12 Oct) and Mystella (12 Oct) saved. | Six PNGs each: terms header, robots header, and (ALD) length guide / (Mystella) four size charts. Committed to docs/terms-evidence/. |
