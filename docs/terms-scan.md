@@ -672,6 +672,136 @@ Four categories checked. **All charts are images**, not HTML tables.
 | Address | Kataria Group, Atore Road, Ghaziabad, UP-201001 |
 | Hours | Monday–Saturday, 11:00–17:00 |
 
+---
+
+## The Chikan Store
+
+**Terms URL:** https://thechikanstore.com/policies/terms-of-service
+**Last updated (page):** not stated
+**Date checked:** 13 Oct 2026
+**Platform:** Shopify Inc. (per OVERVIEW)
+
+### Terms — keyword counts
+
+| Keyword | Count | Notes |
+|---|---|---|
+| `spider` | 1 | §12(i) only |
+| `scrape` | 1 | §12(i) only |
+| `crawl` | 1 | §12(i) only |
+| `robot` | 0 | Absent |
+| `automated` | 0 | Absent |
+| `copy` | 1 | §2 only |
+| `copyright` | 0 | Absent as a standalone term; §1 references "copyright laws" |
+| `reproduce` | 1 | §2 only |
+| `download` | 0 | Absent |
+| `store` | 1 | §2 only ("any portion of the Service") |
+| `derivative` | 0 | Absent |
+| `written` | 1 | §2 only ("express written permission") |
+| `commercial` | 0 | Absent |
+| `grievance` | 0 | Absent |
+
+The terms are Shopify boilerplate, lightly customised. §18 names India as the governing law.
+
+### Clauses that bind
+
+**§2 — General Conditions (the binding one)**
+
+> *"You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion of the Service, use of the Service, or access to the Service or any contact on the website through which the service is provided, without express written permission by us."*
+
+**§12(i) — Prohibited Uses**
+
+> *"In addition to other prohibitions as set forth in the Terms of Service, you are prohibited from using the site or its content: ... (i) to spam, phish, pharm, pretext, spider, crawl, or scrape; ..."*
+
+**§18 — Governing Law**
+
+> *"These Terms of Service and any separate agreements whereby we provide you Services shall be governed by and construed in accordance with the laws of India."*
+
+**Two things stand out:**
+1. §2 names the permission route — "without express written permission by us."
+2. §12(i) prohibits automated collection but not hand-transcription. The binding clause for hand-entry is §2, not §12(i). The email should quote §2.
+
+**One difference from Deniverse:** §2's scope is broader — "any portion of the Service" rather than Deniverse's "material on the Services." It has no personal-only clause; the prohibition is general.
+
+### robots.txt
+
+**URL:** https://thechikanstore.com/robots.txt
+**Read:** 13 Oct 2026
+
+| Keyword | Count |
+|---|---|
+| `crawlable` | 1 |
+| `crawlers` | 1 |
+| `crawl` | 1 |
+| `robots` | 1 |
+| `store` | 1 |
+| `spider` / `scraper` / `automated` / `copy` | 0 |
+
+**Access posture:** same Shopify 2025 agent-friendly template as Deniverse, Yoho, At Long Last, Mystella.
+
+- `User-agent: *` → `Allow: /`
+- Header: *"Public product, collection, page, blog, policy, cart, and localized HTML is crawlable."*
+- Agent endpoints named: `/.well-known/ucp`, `/api/ucp/mcp`, `/agents.md`
+- `/products.json`, `/products`, `/collections` (base) not disallowed
+- Transactional paths disallowed: `/admin`, `/cart/`, `/checkout`, `/orders`, `/account`, `/services`, `/sf_*`, `/cart.js`, `/recommendations/products`
+- Sitemap: `https://thechikanstore.com/sitemap.xml`
+
+### Robots vs terms
+
+| | robots.txt | Terms |
+|---|---|---|
+| `/products.json` | Not disallowed | §2 forbids reproduce/copy; §12(i) forbids spider/crawl/scrape |
+| `/products` (HTML) | Allowed | Same §2 / §12(i) restrictions |
+| `/collections` (base) | Allowed | Same |
+| Automated access | Not addressed | §12(i) |
+| Permission route | — | §2 names "express written permission" |
+
+No contradiction. Both permit catalog access; terms restrict reproducing content; the route to ask is named.
+
+### Size chart — data available
+
+**Format:** HTML text, not image. Both the standard chart and the plus-size chart are tables in the page.
+
+**Standard chart (in inches):**
+
+| Size | Bust | Waist | Hips | Kurta Length | Pant Waist | Pant Length |
+|---|---|---|---|---|---|---|
+| 34 | 34 | 32 | 36 | 42–46 | 26–28 | 37–40 |
+| 36 | 36 | 34 | 38 | 42–46 | 28–30 | 37–40 |
+| 38 | 38 | 36 | 40 | 42–46 | 30–32 | 37–40 |
+| 40 | 40 | 38 | 42 | 42–46 | 32–34 | 38–41 |
+| 42 | 42 | 40 | 44 | 42–46 | 34–36 | 38–41 |
+| 44 | 44 | 42 | 46 | 42–46 | 36–38 | 39–42 |
+| 46 | 46 | 44 | 48 | 42–46 | 38–40 | 39–42 |
+
+**Plus-size chart (in inches):**
+
+| Size | Bust | Waist | Hips | Kurta Length | Pant Waist | Pant Length |
+|---|---|---|---|---|---|---|
+| 48 | 48 | 46 | 50 | 42–46 | 40–42 | 39–42 |
+| 50 | 50 | 48 | 52 | 42–46 | 42–44 | 40–43 |
+| 52 | 52 | 50 | 54 | 42–46 | 44–46 | 40–43 |
+| 54 | 54 | 52 | 56 | 42–46 | 46–48 | 40–43 |
+| 56 | 56 | 54 | 58 | 42–46 | 48–50 | 41–44 |
+| 58 | 58 | 56 | 60 | 42–46 | 50–52 | 41–44 |
+
+**Measurement type:** mixed. Bust / Waist / Hips / Pant Waist are body-type. Kurta Length and Pant Length are garment-type. The qualifying fields (kurta length, pant length) are garment-type. **G = 100%.**
+
+**Data-quality notes:**
+
+- **Kurta Length is a range (42–46) and does not vary by size.** It is fabrication variance, not a size dimension. The fit engine must handle ranges as a first-class case: either a qualified verdict ("likely fit at the long end of the stated range") or `can't assess` when the range straddles the user's measurement. Decide the rule before loading this data.
+- **Pant Length scales with size** (37–40 at size 34 up to 41–44 at size 58), but the top of the range (44 in / 111.8 cm) only appears at plus sizes. A slim-tall user (size 34–38) tops out at 40 in / 101.6 cm — not tall-friendly.
+- **Pant Waist is a range too** (e.g. 26–28), likely elasticated or adjustable.
+
+### Contact route
+
+`lakhnawi.chikankari@gmail.com` (§20)
+
+No phone. No grievance officer named.
+
+### Decision
+
+**ASK PERMISSION.** §2 names "express written permission" as the reproduction route; §12(i) prohibits spider/crawl/scrape; robots.txt is the agent-friendly Shopify template. Publishes Kurta Length (42–46 in) and Pant Length (37–44 in) as ranges. §18 governing law is India. Email to `lakhnawi.chikankari@gmail.com`. Awaiting reply.
+
 ### Decision
 
 **ASK PERMISSION.** No anti-automation clause. Permission route named. robots.txt is agent-friendly. Publishes garment length on four categories checked, covering Bottoms (three charts: Pants & Trousers, Jeans, Cargo) and Skirts/Dresses (Dress). The clause explicitly covers "public" purpose; the email addresses this directly and offers a private-demo fallback. Email sent 12 Oct 2026 to both `yash.stella@gmail.com` and `info.mystella@gmail.com`; awaiting reply.
