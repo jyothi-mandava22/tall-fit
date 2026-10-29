@@ -14,11 +14,18 @@ This project allows users to input their measurements in centimetres/inches and 
 
 This project relies on factual garment measurements published by brands. We do not host brand images, logos, or product descriptions. Every product in the demo links directly back to the brand's official website.
 
+### Deniverse
+* **Status:** Confirmed in writing (11 Oct 2026).
+* **Founder:** Pragya Awasthi.
+* **Data Used:** Inseam, outseam, waist, and hip garment measurements.
+* **Usage Rights:** All data rights remain exclusively with Deniverse.Used under written permission for non-commercial student demonstration. 
+* **Links:** Every entry links back to the respective Deniverse product page.
+
 ### Twelve Twelve Fits
-* **Status:** Permission requested / Under Approvment for non-commercial student demo.
+* **Status:** Permission requested / Under-Approvment for non-commercial student demo.
 * **Founders:** Gulsheen Anand & Ishmeet Banga.
 * **Data Used:** Waist, Hip, Regular Length (42"), and Tall Length (45") garment measurements.
-* **Usage Rights:** All data rights remain exclusively with Twelve Twelve Fits. The data is used here strictly for educational, non-commercial portfolio purposes. 
+* **Usage Rights:** All data rights remain exclusively with Twelve Twelve Fits. The data is used here strictly for educational, non-commercial portfolio purposes.
 * **Links:** Every entry links back to the respective Twelve Twelve Fits product page.
 
 *(Additional brands will be listed here as written permission is confirmed.)*
