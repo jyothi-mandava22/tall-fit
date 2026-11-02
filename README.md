@@ -22,7 +22,7 @@ This project relies on factual garment measurements published by brands. We do n
 * **Links:** Every entry links back to the respective Deniverse product page.
 
 ### Twelve Twelve Fits
-* **Status:** Permission requested / Under-Approvment for non-commercial student demo.
+* **Status:** Confirmed in Writing (30 oct 2026).
 * **Founders:** Gulsheen Anand & Ishmeet Banga.
 * **Data Used:** Waist, Hip, Regular Length (42"), and Tall Length (45") garment measurements.
 * **Usage Rights:** All data rights remain exclusively with Twelve Twelve Fits. The data is used here strictly for educational, non-commercial portfolio purposes.
